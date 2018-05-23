@@ -1,0 +1,7 @@
+<div class="jumbotron">
+	@start@
+		<div class="alert alert-primary" role="alert">
+		   #loop#
+		</div>
+	@end@
+</div>
