@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Garuda Import Test | Garuda Javascript 2</title>
+	<script type="text/javascript" src="https://cdn.lamhotsimamora.com/garuda2"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+	<br>
+	<div class="container" id="app">
+		<!-- data akan dimasukkan disini -->
+	</div>
+
+	<div class="container">
+		<br>
+		<a href="." class="btn btn-success btn-md">Back</a>
+	</div>
+	
+	<!-- 
+	Contoh menggunakan tag element <garuda-import>, untuk multiple data / looping. Tanpa menggunakan javascript
+
+	( Attribute dan Penjelasan )
+	1. src       -> "lokasi source yang dituju, secara default berekstensi .garuda"
+	2. el        -> "element yang dituju untuk menampilkan hasil"
+	3. @loop     -> "untuk mentransfer data variabel (looping), data dipisahkan dengan tanda || "
+	3. @el       -> "element yang dituju untuk melooping data"
+	5. extension -> "untuk memasukkan format file, jika tidak ingin menggunakan .garuda"
+	6. method    -> "method yang akan digunakan, secara default adalah GET"
+	7. token     -> "data token yang akan dikirimkan apabila diperlukan"
+	8. type      -> "Header Content Type, secara default adalah 'text/html' "
+	-->
+	<garuda-import  src     = "fruits-template" 
+                	el      = "app"
+                	@el     = "my_fruit"
+                	@loop   = "1. Semangka || 
+                	           2. Pisang   || 
+                	           3. Apel     || 
+                	           4. Jeruk    || 
+                	           5. Rambutan || 
+                	           6. Duku     || 
+                	           7. Buah Mata Kucing || 
+                	           8. Kelengkeng">
+	</garuda-import>
+
+</body>
+</html>

@@ -1,6 +1,6 @@
-<div class="jumbotron">
+<div class="jumbotron" id="my_fruit">
 	@start@
-		<div class="alert alert-primary" role="alert">
+		<div class="alert alert-danger" role="alert">
 		   #loop#
 		</div>
 	@end@

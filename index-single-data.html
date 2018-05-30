@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Garuda Import Test | Garuda Javascript 2</title>
+	<script type="text/javascript" src="https://cdn.lamhotsimamora.com/garuda2"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+	<br>
+	<div class="container" id="app">
+		<!-- data akan dimasukkan disini -->
+	</div>
+
+	<div class="container">
+		<br>
+		<a href="." class="btn btn-success btn-md">Back</a>
+	</div>
+	
+	<!-- 
+	Contoh menggunakan tag element <garuda-import>, untuk single data. Tanpa menggunakan javascript
+	
+	( Attribute dan Penjelasan )
+	1. src       -> "lokasi source yang dituju, secara default berekstensi .garuda"
+	2. el        -> "element yang dituju untuk menampilkan hasil"
+	3. _variabel -> "untuk mentransfer data variabel diikuti dengan tanda _ pada awal nama variabel"
+	4. extension -> "untuk memasukkan format file, jika tidak ingin menggunakan .garuda"
+	5. method    -> "method yang akan digunakan, secara default adalah GET"
+	6. token     -> "data token yang akan dikirimkan apabila diperlukan"
+	7. type      -> "Header Content Type, secara default adalah 'text/html' "
+	-->
+	<garuda-import  src     = "basic-template" 
+                	el      = "app"
+                	_name   = "Garuda Javascript 2"
+                	_email   = "garuda@gmail.com"
+                	_adress   = "Indonesia"
+                	_author   = "Lamhot Simamora"
+                	_description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				                	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				                	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				                	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				                	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				                	proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                	>
+	</garuda-import>
+
+</body>
+</html>
